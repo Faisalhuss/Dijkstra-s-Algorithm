@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #9fc5e8 0%, #f3f9fc 100%);
+  
+
+}
+.preloader {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out forwards, slideDown 1.5s ease-in-out 1s forwards;
+    opacity: 0;
+    transform: translateY(-30px);
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+.preloader h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+    /* Dark gray text */
+}
+
+
+.team-members {
+
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 50px;
+}
+
+
+.member {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    /* Light gray border */
+    padding: 10px;
+}
+
+.member h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Project details */
+.preloader h2,
+.preloader p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.buttons-container {
+    text-align: center;
+}
+/* Visual elements */
+.preloader::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Replace with your animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    /* Adjust opacity as needed */
+    z-index: -1;
+    /* Place animation behind content */
+}
+.teacher{
+    color: red;
+}
+
+
+
+/* Button styles */
+button#mainProjectButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+    /* Center the button horizontally */
+}
+
+button#mainProjectButton:hover {
+    background-color: #2980b9;
+}
+
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Add margin to create space between team members and button */
+}
+
+
+.member:hover {
+    transform: translateY(-5px);
+    /* Lift the member card on hover */
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide down animation keyframes */
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
