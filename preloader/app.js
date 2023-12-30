@@ -183,7 +183,7 @@ visualizeButton.addEventListener('click', () => {
 
          
         
-        resultElement.innerHTML += `<p>Node ${sourceNode} to Node ${node}: ${distance}  Path: ${path}</p>`;
+        resultElement.innerHTML += `<p>Node ${sourceNode} to Node ${node}: <span style="color: green">${distance}</span>  Path: ${path}</p>`;
     });
 });
 
